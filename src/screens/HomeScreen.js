@@ -6,6 +6,8 @@ const HomeScreen = () => {
     <Text style={styles.text}>
       Hello world. How are you?
       </Text>
+      <Button title="Components">Components</Button>
+      <Button title="List">List</Button>
   </View>;
 };
 
