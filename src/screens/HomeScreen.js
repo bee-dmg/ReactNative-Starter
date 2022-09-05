@@ -36,6 +36,12 @@ const HomeScreen = ({ navigation }) => {
           nav("Color");
         }}
       />
+      <Button
+        title="Add a Square"
+        onPress={() => {
+          nav("Square");
+        }}
+      />
     </View>
   );
 };
