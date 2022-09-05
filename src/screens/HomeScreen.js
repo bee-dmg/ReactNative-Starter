@@ -1,20 +1,31 @@
 import React from "react";
 import { View, Button, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-
-
-const HomeScreen = (props) => {
-  return <View>
-    <Text style={styles.text}>
-      Hello world. How are you?
-      </Text>
-      <Button title="Go to Components Demo" onPress={()=>{props.navigation.navigate("Components");}}/>
-      <TouchableOpacity onPress={()=>{console.log("List pressed")}}>
-        <Text>
-          Go to List Demo
-          </Text>
-      </TouchableOpacity>
-  </View>;
+const HomeScreen = ({ navigation }) => {
+  const nav = navigation.navigate;
+  return (
+    <View>
+      <Text style={styles.text}>Hello world. How are you?</Text>
+      <Button
+        title="Go to Components Demo"
+        onPress={() => {
+          nav("Components");
+        }}
+      />
+      <Button
+        title="Go to List Demo"
+        onPress={() => {
+          nav("List");
+        }}
+      />
+       <Button
+        title="Go to Image Demo"
+        onPress={() => {
+          nav("Image");
+        }}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -24,5 +35,3 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-
-
