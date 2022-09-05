@@ -30,6 +30,12 @@ const HomeScreen = ({ navigation }) => {
           nav("Counter");
         }}
       />
+      <Button
+        title="Add a Color"
+        onPress={() => {
+          nav("Color");
+        }}
+      />
     </View>
   );
 };
