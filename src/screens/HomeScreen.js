@@ -18,13 +18,13 @@ const HomeScreen = ({ navigation }) => {
           nav("List");
         }}
       />
-       <Button
+      <Button
         title="Go to Image Demo"
         onPress={() => {
           nav("Image");
         }}
       />
-       <Button
+      <Button
         title="Go to Counter Demo"
         onPress={() => {
           nav("Counter");
@@ -42,10 +42,16 @@ const HomeScreen = ({ navigation }) => {
           nav("Square");
         }}
       />
-        <Button
+      <Button
         title="Add Some Text"
         onPress={() => {
           nav("Text");
+        }}
+      />
+      <Button
+        title="Add Box Screen"
+        onPress={() => {
+          nav("Box");
         }}
       />
     </View>
