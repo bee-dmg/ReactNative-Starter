@@ -42,6 +42,12 @@ const HomeScreen = ({ navigation }) => {
           nav("Square");
         }}
       />
+        <Button
+        title="Add Some Text"
+        onPress={() => {
+          nav("Text");
+        }}
+      />
     </View>
   );
 };

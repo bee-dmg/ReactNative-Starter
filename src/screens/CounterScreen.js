@@ -7,6 +7,10 @@ const reducer = (state, action) =>{
             return {...state, counter: state.counter + action.payload};
         case "decrease":
             return{...state, counter: state.counter - action.payload};
+        case "reset":
+            return {...state, counter:0};
+            default:
+            return state;
     }
 };
 
@@ -18,6 +22,7 @@ const CounterScreen = () => {
     return <View>
         <Button title="Increase Count" onPress={()=>dispatch({type:"increase", payload:1})}/>
         <Button title="Decrease Count" onPress={()=>dispatch({type:"decrease", payload:1})}/>
+        <Button title="Reset Count" onPress={()=>dispatch({type:"reset", payload:1})}/>
         <Text>Current Count:{state.counter}</Text>
     </View>
 }
