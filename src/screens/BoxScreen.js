@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         borderWidth:3,
         borderColor:'red',
         alignSelf:'stretch',
-        ...StyleSheet.absoluteFillObject // sets left:0, top:0, right:0, bottom:0
+        ...StyleSheet.absoluteFillObject // sets left:0, top:0, right:0, bottom:0 and position to absolute
     },
     textThreeStyle:{
         borderWidth:3,
